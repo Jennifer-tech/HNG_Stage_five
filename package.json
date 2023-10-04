@@ -1,13 +1,17 @@
 {
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "cloudinary": "^1.41.0",
     "connect-busboy": "^1.0.0",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "fluent-ffmpeg": "^2.1.2",
     "fs-extra": "^11.1.1",
+    "mic": "^2.1.2",
     "mongoose": "^7.5.3",
-    "multer": "^1.4.5-lts.1"
+    "multer": "^1.4.5-lts.1",
+    "openai": "^4.11.1"
   },
   "name": "hng_stage_five",
   "description": "Develop the backend for the FE chrome task. This backend will receive the video they send, save it to the disk and render the page where the video will be played. Do not add authentication.",
