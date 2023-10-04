@@ -1,5 +1,4 @@
 const express = require('express')
-// const res = require('express/lib/response')
 const busboy = require('connect-busboy');
 const path = require('path');
 const app = express();
@@ -8,6 +7,7 @@ const OpenAI = require('openai')
 const fs = require('fs-extra');
 require('dotenv').config()
 
+const port = process.env.PORT || 3000;
 // Define the uploadPath variable with the correct path
 const uploadPath = path.join(__dirname, 'uploads'); // Adjust as needed
 fs.ensureDir(uploadPath);
@@ -118,7 +118,7 @@ async function transcribeAudio(filename) {
 
 
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('listening on port 3000')
 })
 
